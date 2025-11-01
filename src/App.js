@@ -69,10 +69,11 @@ function App() {
 
   return (
     <div className="app">
+      <div  style={{display:"flex", alignItems:"center",justifyContent:"center"}}>
       <button onClick={() => setIsOpen(true)}>Open Form</button>
-
+    </div>
       {isOpen && (
-        <div className="modal">
+        <div className="modal" style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
           <div className="modal-content" ref={modalRef}>
             <form onSubmit={handleSubmit}>
               <div>
